@@ -1,4 +1,5 @@
 # PS2BAT-Interface
+[![script](https://img.shields.io/github/actions/workflow/status/ExtremePro11299/Powershell-networking-tool/powershell.yml?label=PowerShellScriptAnalysis&logo=Powershell)](https://github.com/ExtremePro11299/Powershell-networking-tool/actions?workflow=PSScriptAnalyzer)  
 An interface for the [PS2BAT module](https://github.com/EvilBytecode/PS2BAT) by EvilByteCode.
 
 ## Requirements
