@@ -7,6 +7,9 @@ An interface for the [PS2BAT module](https://github.com/EvilBytecode/PS2BAT) by 
 - Compatible [execution policy](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.4)
 - [PS2BAT module](https://github.com/EvilBytecode/PS2BAT)
 
+## Updates (newest to oldest)
+- You can now clear the powershell script entry after completing conversion
+
 ## Usage
 
 ### 1) Connecting to the PS2BAT module
