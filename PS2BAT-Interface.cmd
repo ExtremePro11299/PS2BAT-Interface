@@ -74,4 +74,7 @@ if %target%==not_defined (
     goto :eof
 )
 powershell .\Convert.ps1 -mod %mod% -target %target%
+echo Conversion completed. Clear powershell script entry? (1 - Yes, any other key - No)
+set /p clropt=
+if %clropt%==1 set target=not_defined
 goto :eof
