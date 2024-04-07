@@ -8,6 +8,7 @@ An interface for the [PS2BAT module](https://github.com/EvilBytecode/PS2BAT) by 
 - [PS2BAT module](https://github.com/EvilBytecode/PS2BAT)
 
 ## Updates (newest to oldest)
+- Added cls to all areas
 - You can now clear the powershell script entry after completing conversion
 
 ## Usage

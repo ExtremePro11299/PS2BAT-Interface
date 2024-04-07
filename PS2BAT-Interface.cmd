@@ -39,6 +39,7 @@ if %input%==module call :modselect
 if %input%==select call :scriptselect
 if %input%==convert call :convert
 if %input%==exit exit
+cls
 goto main
 :modselect
 echo Input the path to the PS2BAT module.
@@ -48,7 +49,6 @@ if not exist %mod% (
     set mod=not_defined
     pause
 )
-cls
 goto :eof
 :scriptselect
 echo Input the path to the Powershell script you want to convert.
@@ -58,19 +58,16 @@ if not exist %target% (
     set target=not_defined
     pause
 )
-cls
 goto :eof
 :convert
 if %mod%==not_defined (
     echo Please provide the module first.
     pause
-    cls
     goto :eof
 )
 if %target%==not_defined (
     echo Target Powershell script not selected.
     pause
-    cls
     goto :eof
 )
 powershell .\Convert.ps1 -mod %mod% -target %target%
