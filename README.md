@@ -45,7 +45,7 @@ Type `exit` on the main menu or press Ctrl+C without selecting anything to exit 
 ## Command list
 ```txt
 Commands
- -  help             : Displays this page
+ -  cmds             : Displays this page
  -  module           : Provide the PS2BAT module
  -  select           : Provide the script you want to convert
  -  executionpolicy  : Change the execution policy   
