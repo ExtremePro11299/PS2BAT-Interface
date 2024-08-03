@@ -65,7 +65,7 @@ if not exist %target% (
 goto :eof
 :scriptunblock
 powershell Unblock-file Convert.ps1
-echo Converter unblocked.
+echo Converter unblocked. If there is no error message above, it was successful.
 pause
 goto :eof
 :execpolset
@@ -76,14 +76,14 @@ echo 3) Restricted (does not work with the program, but is the most secure)
 echo 4) Bypass (works with the program, but is very insecure)
 echo 5) Undefined
 echo 6) Cancel
-echo 7) Help
+::echo 7) Help
 set /p execpol=
 if %execpol%==6 goto :eof
-if %execpol%==7 {
-    start "" "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.4"
-    cls
-    goto execpolset
-    }
+::if %execpol%==7 {
+ ::   start "" "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.4"
+  ::  cls
+ ::  goto execpolset
+::    }
 echo For who should the execution policy apply? (type the number)
 echo 1) For you only (CurrentUser)
 echo 2) For the whole computer (LocalMachine, requires running as administrator)
