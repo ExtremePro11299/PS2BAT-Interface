@@ -30,6 +30,7 @@ Type `executionpolicy` on the main menu and you will be able to specify the exec
 
 ### 5) Unblocking converter
 Type `unblock` on the main menu and it will now work with the RemoteSigned execution policy.
+> This feature does not work on Windows 7 and older.
 
 ### 6) Converting
 Type `convert` on the main menu and it will convert the target Powershell script into a batch file.
@@ -42,6 +43,9 @@ Type `exit` on the main menu or press Ctrl+C without selecting anything to exit 
 - Type `unblock` on the main menu.
 ### Module stays undefined after defining it in DefaultModulePath.txt
 - Check if the path in DefaultModulePath.txt is valid.
+### The term Unblock-file is not recognized as a name of a cmdlet
+- Operating systems Windows 7 and older do not support this feature.
+- Unblock Convert.ps1 through the properties menu.
 ## Command list
 ```txt
 Commands
